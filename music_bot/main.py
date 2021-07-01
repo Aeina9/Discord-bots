@@ -220,7 +220,7 @@ async def play_queue():
       await play_queue()
     else:
       try:
-        await asyncio.sleep(300)
+        await asyncio.sleep(1800)
         if last_played == id(obj):
           os.remove('song.m4a')
           print('Timeout disconnect.')
